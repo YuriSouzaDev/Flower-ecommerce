@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: sticky;
+}
+
+.grid-section h3 {
+  font-size: 3.125rem;
+  font-family: $primary-font;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.grid-left {
+  position: sticky;
+  z-index: 1;
+  top: 5.56vw;
+  border-bottom: 1px solid $black;
+}
+
+.grid-title {
+  position: sticky;
+  height: max-content;
+  padding: 5.56vw;
+  top: 5.56vw;
+}
+
+.grid-aside {
+  padding: 5.56vw;
+  border-left: 1px solid $black;
+  border-bottom: 1px solid $black;
+  position: relative;
+}
+
+.grid-aside span {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.grid-aside h4 {
+  font-family: $primary-font;
+  font-weight: 00;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.grid-aside p {
+  color: $black-brightness-90;
+  font-family: $primary-font;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.125rem;
+  max-width: 660px;
+  margin-bottom: 4rem;
+}
+
+.grid-aside a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 24px 14px 24px;
+  display: block;
+  border: 1px solid $black;
+  max-width: 175px;
+  font-family: $primary-font;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
+.grid-aside a:hover {
+  background: $black;
+}

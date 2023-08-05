@@ -1,0 +1,101 @@
+#intro .grid-left {
+  padding: 5.56vw;
+  height: 100vh;
+}
+
+#intro .item1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro h1 {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: 5rem;
+  max-width: 13ch;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.grid-left p {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  max-width: 50ch;
+  padding-bottom: 54px;
+  border-bottom: 1px solid $black;
+  margin-bottom: 1.5rem;
+  color: $black-brightness-90;
+  span {
+    font-style: italic;
+  }
+}
+
+.grid-left .item2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  img {
+    filter: grayscale(100%);
+    padding-right: 1.5rem;
+    max-width: 400px;
+    max-height: 266px;
+    object-fit: cover;
+    border-right: 1px solid $black;
+  }
+  span {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding-left: 1.5rem;
+    max-width: 31ch;
+    line-height: 1.2;
+    color: $black-brightness-90;
+    align-self: flex-end;
+  }
+}
+
+.aside-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.aside-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-left: 1px solid $black;
+  border-bottom: 1px solid $black;
+  position: relative;
+  h2 {
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+}
+
+.aside-text a {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 24px;
+  width: max-content;
+  height: max-content;
+  font-family: $primary-font;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  img {
+    margin-top: 2px;
+    height: 24px;
+    width: 24px;
+  }
+}
