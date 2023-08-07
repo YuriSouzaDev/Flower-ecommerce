@@ -1,0 +1,163 @@
+#contact {
+  font-family: $primary-font;
+}
+
+#contact #contact .grid-left {
+  border: 1px solid $black;
+  border-top: none;
+}
+
+#contact .grid-title {
+  position: unset;
+}
+
+#contact .grid-title h3 {
+  margin-bottom: 1.5rem;
+}
+
+#contact .grid-title p {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  border: none;
+  padding: 0;
+}
+
+#contact .form {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  max-height: 3.5rem;
+}
+
+#contact form input[type="text"] {
+  padding: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1rem;
+  color: $gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex: 2 0 0;
+}
+
+#contact form input[type="submit"] {
+  padding: 1rem 1.5rem 0.875rem 1.5rem;
+  background: $black;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1rem;
+  letter-spacing: 0.48px;
+  color: $white;
+  text-transform: uppercase;
+  flex: 1 0 0;
+  cursor: pointer;
+  border: 3px solid $black;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.contact-info h4 {
+  font-size: 2.375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  padding: 1rem 0.625rem;
+  border-bottom: 1px solid $black;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 18.75vw;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: $black;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    span {
+      font-size: 1.125rem;
+      text-transform: uppercase;
+    }
+  }
+  li img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.grid-right .store-img {
+  position: relative;
+  background: red;
+}
+
+.grid-right .store-img img {
+  object-fit: cover;
+}
+
+.store-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  z-index: 999;
+  background: $white;
+}
+
+.store-info h4 {
+  padding: 1rem 0.625rem;
+  font-size: 2.375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.625rem 2.5rem;
+}
+
+.social-icons li:hover {
+  scale: 1.4;
+  transition: 0.3s;
+}
+
+.social-icons img {
+  height: 24px;
+  width: 24px;
+}
+
+.js [data-week]::before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #e54;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  border: 2px solid #000;
+}
+
+.js [data-week].open::before {
+  background: #3f4;
+}

@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Delivery</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        // to show content with js desactived
+        document.documentElement.className += " js"
+    </script>
 </head>
 
 <body>
@@ -30,7 +34,7 @@
 
     <main>
         <section id="intro" class="grid-section">
-            <article class="grid-left">
+            <article class="grid-left grid-title">
                 <div class="item1">
                     <h1>Kyiv LuxeBouquets <sup>®</sup></h1>
                     <p>Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with Our <span> Online Flower Delivery Service</span></p>
@@ -136,11 +140,84 @@
         </section>
 
         <section id="contact" class="grid-section">
-            <div class="grid-title">
-                <h3>To Contact Us</h3>
+            <div class="grid-left">
+                <div class="grid-title">
+                    <h3>To Contact Us</h3>
+                    <p>We will call you back</p>
+                    <form class="form">
+                        <input type="text" name="tel" id="tel" placeholder="xx xxxxxx-xxxx">
+                        <input type="submit" value="Book a call">
+                    </form>
+                </div>
+                <div class="contact-info border-t">
+                    <div class="contact-info-l border-r">
+                        <div>
+                            <h4>Phone</h4>
+                        </div>
+                        <ul class="info-details ">
+                            <li>
+                                <img src="./assets/img/icons/phone.svg">
+                                <a class="phone" href="tel:+5562999999999">62 99999-9999</a>
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/phone.svg">
+                                <a class="phone" href="tel:+5562999999999">62 98888-8888</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info-r">
+                        <div>
+                            <h4>Address</h4>
+                        </div>
+                        <ul class="info-details">
+                            <li data-week="1,2,3,4,5" data-time="8,11">
+                                <span>opening hours: 8 to 11 p.m.</span>
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/pin_drop.svg"><a href="#">15/4 Khreshchatyk Street, Kyiv </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-right">
+                <div class="store-img">
+                    <img src="./assets/img/photos/contact-img.png" alt="Store">
+                </div>
+                <div class="store-info border-b">
+                    <div class="border-r border-l">
+                        <h4>Follow us</h4>
+                    </div>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#"><img src="./assets/img/icons/Instagram.svg" alt="Instagram Store"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/img/icons/Pinterest.svg" alt="Pinterest Store"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/img/icons/Facebook.svg" alt="Facebook Store"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/img/icons/Twitter.svg" alt="Twitter Store"></a>
+                        </li>
+                        <li>
+                            <a href="#"> <img src="./assets/img/icons/Telegram.svg" alt="Telegram Store"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" style="height: 800px;">
+            <div class="border-b">
+                <h2>Our Services</h2>
             </div>
         </section>
     </main>
+
+    <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>

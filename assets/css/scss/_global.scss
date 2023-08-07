@@ -34,17 +34,16 @@ img {
 }
 
 .grid-left {
-  position: sticky;
   z-index: 1;
   top: 5.56vw;
   border-bottom: 1px solid $black;
 }
 
 .grid-title {
-  position: sticky;
   height: max-content;
   padding: 5.56vw;
   top: 5.56vw;
+  position: sticky;
 }
 
 .grid-aside {
@@ -102,4 +101,20 @@ img {
 
 .grid-aside a:hover {
   background: $black;
+}
+
+.border-b {
+  border-bottom: 1px solid $black;
+}
+
+.border-t {
+  border-top: 1px solid $black;
+}
+
+.border-r {
+  border-right: 1px solid $black;
+}
+
+.border-l {
+  border-left: 1px solid $black;
 }
