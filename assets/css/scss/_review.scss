@@ -1,0 +1,94 @@
+#reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+#reviews span {
+  @include caption;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+#reviews h3 {
+  @include font-50;
+  margin-bottom: 1rem;
+}
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+// .testi-content {
+//   padding-top: 50px;
+// }
+
+#reviews .testimonial p {
+  @include subtitle;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 66ch;
+  margin-bottom: 1rem;
+  font-style: italic;
+  display: flex;
+}
+
+#reviews .testimonial span {
+  @include font-16;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+#reviews .testimonial p sup {
+  font-family: $secondary-font;
+  font-size: 4rem;
+}
+
+#reviews .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#reviews a {
+  @include button;
+  border: 1px solid $black;
+  padding: 1rem 1.5rem 0.875rem 1.5rem;
+  transition: 0.3s;
+}
+
+#reviews a:hover {
+  background: $black;
+  color: $white;
+}
+
+.swiper-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-swiper {
+  top: 20% !important;
+}
+
+.nav-swiper::after,
+.nav-swiper::before {
+  color: $black;
+  font-size: 32px !important;
+}
+
+.swiper-pagination-bullet {
+  background: $light-gray !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $gray !important;
+}

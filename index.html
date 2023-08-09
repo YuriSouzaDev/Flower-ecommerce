@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Delivery</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script>
         // to show content with js desactived
         document.documentElement.className += " js"
@@ -171,7 +173,7 @@
                             <h4>Address</h4>
                         </div>
                         <ul class="info-details">
-                            <li data-week="1,2,3,4,5" data-time="8,12">
+                            <li data-week="1,2,3,4,5" data-time="8,23">
                                 <span>opening hours: 8 to 11 p.m.</span>
                             </li>
                             <li>
@@ -239,10 +241,44 @@
             </div>
         </section>
 
+        <section id="reviews">
+            <span>reviews</span>
+            <h3>Our Clients say</h3>
+            <div class="testimonial swiper mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <p><sup>“</sup>Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop!<sup>”</sup></p>
+                        <span>– Ronald Richards</span>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <p><span>“</span>Ordered flowers online and they were the best bouquet!<span>”</span></p>
+                        <span>– Ronald Richards</span>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <p><span>“</span>Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, in. Itaque quod velit molestiae, ut hic inventore voluptas incidunt officiis.<span>”</span></p>
+                        <span>– Ronald Richards</span>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <p><span>“</span>Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop!Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend this flower shop!<span>”</span></p>
+                        <span>– Ronald Richards</span>
+                    </div>
+                </div>
+                <div class="swiper-button-next nav-swiper"></div>
+                <div class="swiper-button-prev nav-swiper"></div>
+                <div class="swiper-pagination swiper-btn"></div>
+            </div>
+
+            <a href="#">Read reviews</a>
+        </section>
+
 
     </main>
+    <!-- Swiper JS -->
+    <script src="./assets/js/cdn.jsdelivr.net_npm_swiper@10.1.0_swiper-bundle.min.js"></script>
 
     <script type="module" src="./assets/js/script.js"></script>
+
 </body>
 
 </html>

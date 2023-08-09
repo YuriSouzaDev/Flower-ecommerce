@@ -4,6 +4,12 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "BIZ UDGothic";
+  src: local(BIZ UDGothic) url("../../fonts/BIZUDGothic-Regular.ttf"), format("opentype");
+  font-weight: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -407,9 +413,8 @@ img {
   height: 24px;
 }
 
-.grid-right {
+#contact .grid-right {
   position: relative;
-  background: red;
 }
 
 .grid-right .store-img img {
@@ -538,7 +543,7 @@ img {
 
 #services .services-events {
   height: 50vh;
-  background-image: linear-gradient(rgba(18, 18, 18, 0.35), rgba(18, 18, 18, 0.35)), url(../img/photos/weeding-img.png);
+  background: linear-gradient(0deg, rgba(18, 18, 18, 0.4) 0%, rgba(18, 18, 18, 0.4) 100%), url(../img/photos/weeding-img.png), lightgray 0px -83.041px/100% 130.833% no-repeat;
   background-size: auto, cover;
   background-position: 0 0, 50%;
   background-attachment: scroll, fixed;
@@ -559,6 +564,115 @@ img {
   border: 1px solid #fff;
 }
 
+#reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+#reviews span {
+  font-family: "Gilroy";
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+#reviews h3 {
+  font-family: "Gilroy";
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+#reviews .testimonial p {
+  font-family: "Gilroy";
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 66ch;
+  margin-bottom: 1rem;
+  font-style: italic;
+  display: flex;
+}
+
+#reviews .testimonial span {
+  font-family: "Gilroy";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+#reviews .testimonial p sup {
+  font-family: "BIZ UDGothic";
+  font-size: 4rem;
+}
+
+#reviews .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#reviews a {
+  font-family: "Gilroy";
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+  border: 1px solid #121212;
+  padding: 1rem 1.5rem 0.875rem 1.5rem;
+  transition: 0.3s;
+}
+
+#reviews a:hover {
+  background: #121212;
+  color: #fff;
+}
+
+.swiper-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-swiper {
+  top: 20% !important;
+}
+
+.nav-swiper::after,
+.nav-swiper::before {
+  color: #121212;
+  font-size: 32px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #d2d2d7 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #808080 !important;
+}
+
 @media (max-width: 768px) {
   .grid-section {
     grid-template-columns: 1fr;
@@ -566,5 +680,8 @@ img {
   }
   .grid-title {
     position: unset;
+  }
+  .nav-swiper {
+    display: none !important;
   }
 }

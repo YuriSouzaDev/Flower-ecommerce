@@ -1,4 +1,5 @@
 $primary-font: "Gilroy";
+$secondary-font: "BIZ UDGothic";
 $lh-100: 1;
 $lh-120: 1.2;
 $lh-140: 1.4;
@@ -110,5 +111,12 @@ $fs-shop-link: 1.02vw;
   src: local(Gilroy), url("../fonts/Gilroy-Regular.ttf"),
     ("../fonts/Gilroy-Medium.ttf"),
     ("../fonts/Gilroy-Semibold.ttf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "BIZ UDGothic";
+  src: local(BIZ UDGothic) url("../../fonts/BIZUDGothic-Regular.ttf"),
+    format("opentype");
   font-weight: normal;
 }
