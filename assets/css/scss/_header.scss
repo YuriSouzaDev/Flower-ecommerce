@@ -1,16 +1,10 @@
 #header {
-  width: 100%;
   position: sticky;
   z-index: 999;
   top: 0;
   left: 0;
   right: 0;
   bottom: auto;
-}
-
-#nav {
-  border-top: 1px solid $black;
-  border-bottom: 1px solid $black;
 }
 
 #nav ul {
@@ -25,16 +19,8 @@
   background: #000;
 }
 
-#nav ul:first-child li {
-  border-right: 1px solid $black;
-}
-
-#nav ul:last-child li {
-  border-left: 1px solid $black;
-}
-
 #nav li {
-  padding: 2.23vw;
+  padding: 1.6666666666666667vw 1.25vw;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -43,13 +29,9 @@
 }
 
 #nav a {
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 1.375rem;
-  letter-spacing: 0.4px;
-  line-height: 1.4;
   width: 100%;
   text-align: center;
+  @include links;
 }
 
 #nav .white-space {

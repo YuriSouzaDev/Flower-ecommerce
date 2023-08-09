@@ -23,7 +23,7 @@ img {
 .grid-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  position: sticky;
+  grid-template-rows: auto;
 }
 
 .grid-section h3 {
@@ -35,15 +35,14 @@ img {
 
 .grid-left {
   z-index: 1;
-  top: 5.56vw;
   border-bottom: 1px solid $black;
 }
 
 .grid-title {
   height: max-content;
-  padding: 5.56vw;
-  top: 5.56vw;
+  padding: 4.166666666666667vw;
   position: sticky;
+  top: 5rem;
 }
 
 .grid-aside {
@@ -100,7 +99,9 @@ img {
 }
 
 .grid-aside a:hover {
+  color: $white;
   background: $black;
+  transition: 0.3s;
 }
 
 .border-b {

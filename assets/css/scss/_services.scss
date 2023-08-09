@@ -1,6 +1,76 @@
 #services h2 {
-  font-size: 5rem;
   padding: 5.56vw;
   text-align: center;
-  font-weight: 600;
+  @include font-50;
+}
+
+#services img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+#services span {
+  @include caption;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+#services h3 {
+  @include font-50;
+  margin-bottom: 1rem;
+}
+
+#services p {
+  @include subtitle;
+  text-align: center;
+  max-width: 50ch;
+  margin-bottom: 4rem;
+}
+
+#services a {
+  @include button;
+  border: 1px solid $black;
+  padding: 1rem 1.5rem 0.875rem 1.5rem;
+  transition: 0.3s;
+}
+
+#services a:hover {
+  background: $black;
+  color: $white;
+}
+
+#services .services-events {
+  height: 50vh;
+  background-image: linear-gradient(
+      rgba(18, 18, 18, 0.35),
+      rgba(18, 18, 18, 0.35)
+    ),
+    url(../img/photos/weeding-img.png);
+  background-size: auto, cover;
+  background-position: 0 0, 50%;
+  background-attachment: scroll, fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  padding: 5rem;
+}
+
+#services .events p {
+  max-width: 55ch;
+}
+
+#services .services-events a {
+  color: $white;
+  border: 1px solid $white;
 }

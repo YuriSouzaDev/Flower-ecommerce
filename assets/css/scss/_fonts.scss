@@ -1,4 +1,109 @@
 $primary-font: "Gilroy";
+$lh-100: 1;
+$lh-120: 1.2;
+$lh-140: 1.4;
+
+@mixin font-67 {
+  font-family: $primary-font;
+  font-size: 4.1875rem;
+  font-weight: 600;
+  line-height: $lh-120;
+}
+
+@mixin font-50 {
+  font-family: $primary-font;
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: $lh-120;
+}
+
+@mixin font-38 {
+  font-family: $primary-font;
+  font-size: 2.375rem;
+  font-weight: 500;
+  line-height: $lh-120;
+}
+
+@mixin font-28 {
+  font-family: $primary-font;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: $lh-120;
+}
+
+@mixin font-21 {
+  font-family: $primary-font;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  line-height: $lh-120;
+}
+
+@mixin font-16 {
+  font-family: $primary-font;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: $lh-120;
+}
+
+@mixin subtitle {
+  font-family: $primary-font;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@mixin body {
+  font-family: $primary-font;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: $lh-140;
+}
+
+@mixin button {
+  font-family: $primary-font;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+}
+
+@mixin links {
+  font-family: $primary-font;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+@mixin overline {
+  font-family: $primary-font;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@mixin caption {
+  font-family: $primary-font;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@mixin caption-small {
+  font-family: $primary-font;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+$fs-h2: 2.5vw;
+$fs-p: 1.25vw;
+$fs-small-span: 0.74vw;
+$fs-nav-link: 1.125vw;
+$fs-shop-link: 1.02vw;
 
 @font-face {
   font-family: "Gilroy";

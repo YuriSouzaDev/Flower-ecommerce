@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .grid-title {
+    position: unset;
+  }
+}

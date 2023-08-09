@@ -14,18 +14,18 @@
 
 <body>
     <header id="header">
-        <nav id="nav" class="grid-section">
+        <nav id="nav" class="grid-section border-t border-b">
             <ul>
                 <div class="nav-link-left">
                     <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="border-r border-l"><a href="#">Contact</a></li>
                 </div>
                 <div class="white-space"></div>
             </ul>
             <ul>
                 <div class="white-space"></div>
                 <div class="nav-link-right">
-                    <li><a href="#">Sign in</a></li>
+                    <li class="border-r border-l"><a href="#">Sign in</a></li>
                     <li><a href="#">Cart</a></li>
                 </div>
             </ul>
@@ -39,8 +39,8 @@
                     <h1>Kyiv LuxeBouquets <sup>®</sup></h1>
                     <p>Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with Our <span> Online Flower Delivery Service</span></p>
                 </div>
-                <div class="item2">
-                    <img src="./assets/img/photos/intro-img.jpeg" alt="Woman sniffing flower">
+                <div class="item2 border-t">
+                    <img src="./assets/img/photos/intro-img.jpeg" alt="Woman sniffing flower" class="border-r">
 
                     <span>Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.</span>
                 </div>
@@ -48,7 +48,7 @@
 
             <aside id="intro-aside">
                 <div class="aside-items">
-                    <div class="aside-text">
+                    <div class="aside-text border-b border-l">
                         <h2>Fresh Flowers</h2>
                         <a href="#">Shop now <img src="./assets/img/icons/arrow-right.svg" alt="arrow right"></a>
                     </div>
@@ -61,14 +61,14 @@
                     <div>
                         <img src="./assets/img/photos/dried-flowers.jpg" alt="Dried Flowers">
                     </div>
-                    <div class="aside-text">
+                    <div class="aside-text border-b border-l">
                         <h2>Dried Flowers</h2>
                         <a href="#"><img src="./assets/img/icons/arrow-left.svg" alt="arrow right">Shop now</a>
                     </div>
                 </div>
 
                 <div class="aside-items">
-                    <div class="aside-text">
+                    <div class="aside-text border-b border-l">
                         <h2>Live Plants </h2>
                         <a href="#">Shop now <img src="./assets/img/icons/arrow-right.svg" alt="arrow right"></a>
                     </div>
@@ -81,14 +81,14 @@
                     <div>
                         <img src="./assets/img/photos/aroma-candels.jpg" alt="Aroma Candels">
                     </div>
-                    <div class="aside-text">
+                    <div class="aside-text border-b border-l">
                         <h2>Aroma Candels</h2>
                         <a href="#"><img src="./assets/img/icons/arrow-left.svg" alt="arrow right">Shop now</a>
                     </div>
                 </div>
 
                 <div class="aside-items">
-                    <div class="aside-text">
+                    <div class="aside-text border-b border-l">
                         <h2>Fresheners </h2>
                         <a href="#">Shop now<img src="./assets/img/icons/arrow-right.svg" alt="arrow right"></a>
                     </div>
@@ -150,11 +150,11 @@
                     </form>
                 </div>
                 <div class="contact-info border-t">
-                    <div class="contact-info-l border-r">
-                        <div>
+                    <div class="contact-info-l">
+                        <div class="border-r">
                             <h4>Phone</h4>
                         </div>
-                        <ul class="info-details ">
+                        <ul class="info-details border-r">
                             <li>
                                 <img src="./assets/img/icons/phone.svg">
                                 <a class="phone" href="tel:+5562999999999">62 99999-9999</a>
@@ -171,7 +171,7 @@
                             <h4>Address</h4>
                         </div>
                         <ul class="info-details">
-                            <li data-week="1,2,3,4,5" data-time="8,11">
+                            <li data-week="1,2,3,4,5" data-time="8,12">
                                 <span>opening hours: 8 to 11 p.m.</span>
                             </li>
                             <li>
@@ -186,7 +186,7 @@
                     <img src="./assets/img/photos/contact-img.png" alt="Store">
                 </div>
                 <div class="store-info border-b">
-                    <div class="border-r border-l">
+                    <div class="border-r">
                         <h4>Follow us</h4>
                     </div>
                     <ul class="social-icons">
@@ -210,11 +210,36 @@
             </div>
         </section>
 
-        <section id="services" style="height: 800px;">
+        <section id="services">
             <div class="border-b">
                 <h2>Our Services</h2>
             </div>
+            <div class="grid-section border-b">
+                <div class="border-r">
+                    <img src="./assets/img/photos/services-img.png" alt="Woman looking for flowers">
+                </div>
+                <div class="services-content">
+                    <span>service</span>
+                    <h3>Flower Subcriptions</h3>
+                    <p>Experience the convenience and savings of regular flower deliveries with our flexible subscription service - up to 30% more profitable than one-time purchases.</p>
+
+                    <a href="#">Subscribe Now</a>
+                </div>
+            </div>
+
+            <div class="services-events">
+                <div class="events-content">
+                    <span>service</span>
+                    <h3>Wedding & Event Decor</h3>
+                    <p>Let our team of expert florists and designers create stunning, on-trend floral décor for your special day. Trust us to bring your vision to life.</p>
+
+                    <a href="#">Inquire Now</a>
+                </div>
+
+            </div>
         </section>
+
+
     </main>
 
     <script type="module" src="./assets/js/script.js"></script>
