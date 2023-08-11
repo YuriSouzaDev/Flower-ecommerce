@@ -132,6 +132,44 @@ img {
   border-left: 1px solid #121212;
 }
 
+#home .form {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  max-height: 3.5rem;
+}
+
+#home form input[type="text"],
+#home form input[type="email"] {
+  padding: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1rem;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex: 2 0 0;
+}
+
+#home form input[type="submit"] {
+  padding: 1rem 1.5rem 0.875rem 1.5rem;
+  background: #121212;
+  color: #fff;
+  flex: 1 0 0;
+  border: 3px solid #121212;
+  font-family: "Gilroy";
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 #header {
   position: sticky;
   z-index: 999;
@@ -572,7 +610,7 @@ img {
   padding: 5rem;
 }
 
-#reviews span {
+#reviews .review-span {
   font-family: "Gilroy";
   font-size: 0.875rem;
   line-height: 1.2;
@@ -580,6 +618,18 @@ img {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
   display: block;
+  position: relative;
+}
+
+#reviews .review-span::before {
+  content: "";
+  top: -36px;
+  height: 28px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 77px;
+  background-image: url("../img/icons/google-logo.png");
+  position: absolute;
 }
 
 #reviews h3 {
@@ -609,6 +659,11 @@ img {
   display: flex;
 }
 
+#reviews .testimonial p sup {
+  font-family: "BIZ UDGothic";
+  font-size: 4rem;
+}
+
 #reviews .testimonial span {
   font-family: "Gilroy";
   font-size: 1rem;
@@ -616,11 +671,6 @@ img {
   line-height: 1.2;
   margin-bottom: 2rem;
   display: block;
-}
-
-#reviews .testimonial p sup {
-  font-family: "BIZ UDGothic";
-  font-size: 4rem;
 }
 
 #reviews .slide {
@@ -671,6 +721,114 @@ img {
 
 .swiper-pagination-bullet-active {
   background: #808080 !important;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(autofit minmax(25%, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-item {
+  padding: 2.5rem;
+  min-height: 429px;
+  max-height: 450px;
+  flex: 1 0 0;
+}
+
+#footer .footer-item p {
+  font-family: "Gilroy";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 35ch;
+  margin-bottom: 1.5rem;
+}
+
+#footer .form {
+  flex-direction: column;
+}
+
+#footer form input[type="text"],
+#footer form input[type="email"] {
+  padding: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1rem;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex: 2 0 0;
+}
+
+#footer form input[type="submit"] {
+  padding: 1rem 1.5rem 0.875rem 1.5rem;
+  background: #121212;
+  color: #fff;
+  flex: 1 0 0;
+  border: 3px solid #121212;
+  font-family: "Gilroy";
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+#footer h2 {
+  font-family: "Gilroy";
+  font-size: 1.3125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #808080;
+  margin-bottom: 1.5rem;
+}
+
+#footer h3 {
+  font-family: "Gilroy";
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #808080;
+  margin-bottom: 0.5rem;
+}
+
+#footer a {
+  font-family: "Gilroy";
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  width: max-content;
+}
+
+#footer .contact a {
+  display: block;
+  margin-bottom: 1.5rem !important;
+}
+
+#footer .social-icons {
+  flex-direction: row !important;
+  gap: 2rem !important;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+#footer .shop ul li:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {

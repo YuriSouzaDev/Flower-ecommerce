@@ -119,3 +119,35 @@ img {
 .border-l {
   border-left: 1px solid $black;
 }
+
+#home .form {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  max-height: 3.5rem;
+}
+
+#home form input[type="text"],
+#home form input[type="email"] {
+  padding: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1rem;
+  color: $gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex: 2 0 0;
+}
+
+#home form input[type="submit"] {
+  padding: 1rem 1.5rem 0.875rem 1.5rem;
+  background: $black;
+  color: $white;
+  flex: 1 0 0;
+  border: 3px solid $black;
+  @include button;
+  transition: 0.3s;
+}

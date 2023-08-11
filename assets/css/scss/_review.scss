@@ -6,11 +6,23 @@
   padding: 5rem;
 }
 
-#reviews span {
+#reviews .review-span {
   @include caption;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
   display: block;
+  position: relative;
+}
+
+#reviews .review-span::before {
+  content: "";
+  top: -36px;
+  height: 28px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 77px;
+  background-image: url("../img/icons/google-logo.png");
+  position: absolute;
 }
 
 #reviews h3 {
@@ -24,10 +36,6 @@
   margin-bottom: 4rem;
 }
 
-// .testi-content {
-//   padding-top: 50px;
-// }
-
 #reviews .testimonial p {
   @include subtitle;
   font-size: 2rem;
@@ -36,17 +44,16 @@
   margin-bottom: 1rem;
   font-style: italic;
   display: flex;
+  sup {
+    font-family: $secondary-font;
+    font-size: 4rem;
+  }
 }
 
 #reviews .testimonial span {
   @include font-16;
   margin-bottom: 2rem;
   display: block;
-}
-
-#reviews .testimonial p sup {
-  font-family: $secondary-font;
-  font-size: 4rem;
 }
 
 #reviews .slide {

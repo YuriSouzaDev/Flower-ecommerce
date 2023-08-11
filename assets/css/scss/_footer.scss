@@ -1,0 +1,88 @@
+#footer {
+  display: grid;
+  grid-template-columns: repeat(autofit minmax(25%, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-item {
+  padding: 2.5rem;
+  min-height: 429px;
+  max-height: 450px;
+  flex: 1 0 0;
+}
+
+#footer .footer-item p {
+  @include font-16;
+  max-width: 35ch;
+  margin-bottom: 1.5rem;
+}
+
+#footer .form {
+  flex-direction: column;
+}
+
+#footer form input[type="text"],
+#footer form input[type="email"] {
+  padding: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1rem;
+  color: $gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex: 2 0 0;
+}
+
+#footer form input[type="submit"] {
+  padding: 1rem 1.5rem 0.875rem 1.5rem;
+  background: $black;
+  color: $white;
+  flex: 1 0 0;
+  border: 3px solid $black;
+  @include button;
+  transition: 0.3s;
+  width: 100%;
+}
+
+#footer h2 {
+  @include font-21;
+  color: $gray;
+  margin-bottom: 1.5rem;
+}
+
+#footer h3 {
+  @include caption;
+  color: $gray;
+  margin-bottom: 0.5rem;
+}
+
+#footer a {
+  @include links;
+  width: max-content;
+}
+
+#footer .contact a {
+  display: block;
+  margin-bottom: 1.5rem !important;
+}
+
+#footer .social-icons {
+  flex-direction: row !important;
+  gap: 2rem !important;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+#footer .shop ul li:last-child {
+  margin-bottom: 0;
+}
