@@ -24,9 +24,7 @@
 #footer form input[type="text"],
 #footer form input[type="email"] {
   padding: 1rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-size: 1rem;
+  @include font-16;
   color: $gray;
   display: flex;
   flex-direction: column;
@@ -45,6 +43,12 @@
   @include button;
   transition: 0.3s;
   width: 100%;
+}
+
+#footer form input[type="submit"]:hover {
+  background: $gray;
+  color: $white;
+  border-color: $gray;
 }
 
 #footer h2 {

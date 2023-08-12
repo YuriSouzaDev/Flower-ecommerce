@@ -77,8 +77,14 @@
   height: max-content;
   @include links;
   font-weight: 600;
+  transition: 0.3s;
   img {
     height: 24px;
     width: 24px;
+    overflow: hidden;
   }
+}
+
+.aside-items:hover a {
+  gap: 12px;
 }
